@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_03c6a299396bc3c73ae01676a78c5e61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_03c6a299396bc3c73ae01676a78c5e61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_03c6a299396bc3c73ae01676a78c5e61 = L.map(
+                "map_03c6a299396bc3c73ae01676a78c5e61",
+                {
+                    center: [-23.572144818181815, -46.684081681818185],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_03c6a299396bc3c73ae01676a78c5e61);
+
+            
+
+        
+    
+            var tile_layer_e2bdf4dc9f44141e0ec2d0c7d3478efa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e2bdf4dc9f44141e0ec2d0c7d3478efa.addTo(map_03c6a299396bc3c73ae01676a78c5e61);
+        
+    
+            var feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_734d24fb3c06640717c11dbb458fea4b = L.marker(
+                [-23.555934, -46.650112],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_f87974b22542fd409c57f736d6663881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ca0286607db831a7074144d704a8972 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_131ea027dde5ad74d5d993635ba9e5a9 = $(`<div id="html_131ea027dde5ad74d5d993635ba9e5a9" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> PARADA 14 BIS B/C<br><b>Endereço:</b> <br><b>Código:</b> 706325</div>`)[0];
+                popup_2ca0286607db831a7074144d704a8972.setContent(html_131ea027dde5ad74d5d993635ba9e5a9);
+            
+        
+
+        marker_734d24fb3c06640717c11dbb458fea4b.bindPopup(popup_2ca0286607db831a7074144d704a8972)
+        ;
+
+        
+    
+    
+            marker_734d24fb3c06640717c11dbb458fea4b.bindTooltip(
+                `<div>
+                     PARADA 14 BIS B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_734d24fb3c06640717c11dbb458fea4b.setIcon(icon_f87974b22542fd409c57f736d6663881);
+            
+    
+            var marker_8e63331649b0880234887e9477b8cca6 = L.marker(
+                [-23.577143, -46.672472],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_46ec40730b282a8adafce0e7ee09c890 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d3dac354c06b633b48bd9228e2ab7c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7cc1c7bb0bb6510d7ec356014a8e0d2 = $(`<div id="html_c7cc1c7bb0bb6510d7ec356014a8e0d2" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> Parada Marina Cintra - B/C<br><b>Endereço:</b> <br><b>Código:</b> 3407076</div>`)[0];
+                popup_6d3dac354c06b633b48bd9228e2ab7c9.setContent(html_c7cc1c7bb0bb6510d7ec356014a8e0d2);
+            
+        
+
+        marker_8e63331649b0880234887e9477b8cca6.bindPopup(popup_6d3dac354c06b633b48bd9228e2ab7c9)
+        ;
+
+        
+    
+    
+            marker_8e63331649b0880234887e9477b8cca6.bindTooltip(
+                `<div>
+                     Parada Marina Cintra - B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e63331649b0880234887e9477b8cca6.setIcon(icon_46ec40730b282a8adafce0e7ee09c890);
+            
+    
+            var marker_ff564109cfd196eeb2020b7ec16face6 = L.marker(
+                [-23.558817, -46.653872],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_ec2b84d3c5a86edb856cee8eeec4dd70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b7bb7e2d0779fbca69356ef56da3787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f82ca30ea3c33c1af43d13dedee54c44 = $(`<div id="html_f82ca30ea3c33c1af43d13dedee54c44" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> GETÚLIO VARGAS B/C<br><b>Endereço:</b> R DOUTOR PLINIO BARRETO/ R PROFESSOR PICAROLO<br><b>Código:</b> 70016561</div>`)[0];
+                popup_9b7bb7e2d0779fbca69356ef56da3787.setContent(html_f82ca30ea3c33c1af43d13dedee54c44);
+            
+        
+
+        marker_ff564109cfd196eeb2020b7ec16face6.bindPopup(popup_9b7bb7e2d0779fbca69356ef56da3787)
+        ;
+
+        
+    
+    
+            marker_ff564109cfd196eeb2020b7ec16face6.bindTooltip(
+                `<div>
+                     GETÚLIO VARGAS B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff564109cfd196eeb2020b7ec16face6.setIcon(icon_ec2b84d3c5a86edb856cee8eeec4dd70);
+            
+    
+            var marker_13dd95de186adf9625afae5ac5b24fc7 = L.marker(
+                [-23.570012, -46.661799],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_6512c71443e440578d454c2fb2e071e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db70f692cdde8e5300a0aa28e5905f90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c59390b0d63117b5c615a315e16cbb5f = $(`<div id="html_c59390b0d63117b5c615a315e16cbb5f" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> ESTADOS UNIDOS B/C<br><b>Endereço:</b> R CRAVINHOS/ R HAITI<br><b>Código:</b> 440015158</div>`)[0];
+                popup_db70f692cdde8e5300a0aa28e5905f90.setContent(html_c59390b0d63117b5c615a315e16cbb5f);
+            
+        
+
+        marker_13dd95de186adf9625afae5ac5b24fc7.bindPopup(popup_db70f692cdde8e5300a0aa28e5905f90)
+        ;
+
+        
+    
+    
+            marker_13dd95de186adf9625afae5ac5b24fc7.bindTooltip(
+                `<div>
+                     ESTADOS UNIDOS B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13dd95de186adf9625afae5ac5b24fc7.setIcon(icon_6512c71443e440578d454c2fb2e071e0);
+            
+    
+            var marker_492978bf79d313205d1ad197991fc2d3 = L.marker(
+                [-23.566834, -46.658743],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_7f8a4ab52fd9850bf6d8cc454e759612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5656e0cfd8595b86b769d03dd56afe16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0039f7ec1997da9e1081f0b668e0a794 = $(`<div id="html_0039f7ec1997da9e1081f0b668e0a794" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> JOSE MARIA LISBOA B/C<br><b>Endereço:</b> R JOSE MARIA LISBOA/ AL FRANCA<br><b>Código:</b> 440015161</div>`)[0];
+                popup_5656e0cfd8595b86b769d03dd56afe16.setContent(html_0039f7ec1997da9e1081f0b668e0a794);
+            
+        
+
+        marker_492978bf79d313205d1ad197991fc2d3.bindPopup(popup_5656e0cfd8595b86b769d03dd56afe16)
+        ;
+
+        
+    
+    
+            marker_492978bf79d313205d1ad197991fc2d3.bindTooltip(
+                `<div>
+                     JOSE MARIA LISBOA B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_492978bf79d313205d1ad197991fc2d3.setIcon(icon_7f8a4ab52fd9850bf6d8cc454e759612);
+            
+    
+            var marker_fb7590adf4d5a195f8bfa73c697c2ad5 = L.marker(
+                [-23.574389, -46.667594],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_69df7d5cbafd5079e55eadcd4e3ce89c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f01ae861291f25ebb16c6f4ff81aff7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc4951b519e863cfa784524f5f0ed874 = $(`<div id="html_cc4951b519e863cfa784524f5f0ed874" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> GUIANAS B/C<br><b>Endereço:</b> AV BRASIL/ R ESPERIA<br><b>Código:</b> 440015164</div>`)[0];
+                popup_8f01ae861291f25ebb16c6f4ff81aff7.setContent(html_cc4951b519e863cfa784524f5f0ed874);
+            
+        
+
+        marker_fb7590adf4d5a195f8bfa73c697c2ad5.bindPopup(popup_8f01ae861291f25ebb16c6f4ff81aff7)
+        ;
+
+        
+    
+    
+            marker_fb7590adf4d5a195f8bfa73c697c2ad5.bindTooltip(
+                `<div>
+                     GUIANAS B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb7590adf4d5a195f8bfa73c697c2ad5.setIcon(icon_69df7d5cbafd5079e55eadcd4e3ce89c);
+            
+    
+            var marker_e09ff394c47e6dba22c33ecf9878b76f = L.marker(
+                [-23.572945, -46.705052],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_6c1ac057be3359b109846f6dc501ecd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_863c4f63aa1351323ec985155d2a4fe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2e86d797345669499f3567ae32b028c = $(`<div id="html_b2e86d797345669499f3567ae32b028c" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> PARADA VITAL BRASIL B/C<br><b>Endereço:</b> R MMDC/ AV LINEU DE PAULA MACHADO<br><b>Código:</b> 550011358</div>`)[0];
+                popup_863c4f63aa1351323ec985155d2a4fe0.setContent(html_b2e86d797345669499f3567ae32b028c);
+            
+        
+
+        marker_e09ff394c47e6dba22c33ecf9878b76f.bindPopup(popup_863c4f63aa1351323ec985155d2a4fe0)
+        ;
+
+        
+    
+    
+            marker_e09ff394c47e6dba22c33ecf9878b76f.bindTooltip(
+                `<div>
+                     PARADA VITAL BRASIL B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e09ff394c47e6dba22c33ecf9878b76f.setIcon(icon_6c1ac057be3359b109846f6dc501ecd8);
+            
+    
+            var marker_5b2cda59d6be9081a0d9957d051a9c22 = L.marker(
+                [-23.551241, -46.64583],
+                {
+}
+            ).addTo(feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5);
+        
+    
+            var icon_be25933f92b03a456a61294c94086056 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_622ea3d8d85f75611446cd4d18b892ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80e8bcebaa8aa9fafd5a701196969000 = $(`<div id="html_80e8bcebaa8aa9fafd5a701196969000" style="width: 100.0%; height: 100.0%;"><b>Parada:</b> PARADA MUSEU JUDAICO DE SP - B/C<br><b>Endereço:</b> VDTO MARTINHO PRADO/ R MAJOR QUEDINHO<br><b>Código:</b> 670016557</div>`)[0];
+                popup_622ea3d8d85f75611446cd4d18b892ab.setContent(html_80e8bcebaa8aa9fafd5a701196969000);
+            
+        
+
+        marker_5b2cda59d6be9081a0d9957d051a9c22.bindPopup(popup_622ea3d8d85f75611446cd4d18b892ab)
+        ;
+
+        
+    
+    
+            marker_5b2cda59d6be9081a0d9957d051a9c22.bindTooltip(
+                `<div>
+                     PARADA MUSEU JUDAICO DE SP - B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b2cda59d6be9081a0d9957d051a9c22.setIcon(icon_be25933f92b03a456a61294c94086056);
+            
+    
+            feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5.addTo(map_03c6a299396bc3c73ae01676a78c5e61);
+        
+    
+            var feature_group_d16540628bdecdc6ce9d5fd0b7af7e37 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d427703bd2e67fc865cd07b4d47adb7e = L.marker(
+                [-23.602549, -46.785582500000004],
+                {
+}
+            ).addTo(feature_group_d16540628bdecdc6ce9d5fd0b7af7e37);
+        
+    
+            var icon_88d749c34ca3f8f37f7213224f7bf333 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_639098f7ed1cad9ac7228ccf39c23181 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6526ec280b7a4ce9d30491a203659148 = $(`<div id="html_6526ec280b7a4ce9d30491a203659148" style="width: 100.0%; height: 100.0%;"><b>Linha:</b> 8610-10<br><b>Prefixo:</b> 81153<br><b>Acessível:</b> Sim<br><b>Horário da posição:</b> 2026-10-18T14:45:17Z</div>`)[0];
+                popup_639098f7ed1cad9ac7228ccf39c23181.setContent(html_6526ec280b7a4ce9d30491a203659148);
+            
+        
+
+        marker_d427703bd2e67fc865cd07b4d47adb7e.bindPopup(popup_639098f7ed1cad9ac7228ccf39c23181)
+        ;
+
+        
+    
+    
+            marker_d427703bd2e67fc865cd07b4d47adb7e.bindTooltip(
+                `<div>
+                     Ônibus 81153
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d427703bd2e67fc865cd07b4d47adb7e.setIcon(icon_88d749c34ca3f8f37f7213224f7bf333);
+            
+    
+            var marker_cbf341a528c870c171ba0eafa7868cf0 = L.marker(
+                [-23.577168, -46.6726765],
+                {
+}
+            ).addTo(feature_group_d16540628bdecdc6ce9d5fd0b7af7e37);
+        
+    
+            var icon_85d9dd585f4621bc92afea832835153d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2906d18c6e3915e91318409d8589266 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c49a03b5f58107d4bd7dbb00d6a0bcc5 = $(`<div id="html_c49a03b5f58107d4bd7dbb00d6a0bcc5" style="width: 100.0%; height: 100.0%;"><b>Linha:</b> 8610-10<br><b>Prefixo:</b> 81205<br><b>Acessível:</b> Sim<br><b>Horário da posição:</b> 2026-10-18T14:45:11Z</div>`)[0];
+                popup_f2906d18c6e3915e91318409d8589266.setContent(html_c49a03b5f58107d4bd7dbb00d6a0bcc5);
+            
+        
+
+        marker_cbf341a528c870c171ba0eafa7868cf0.bindPopup(popup_f2906d18c6e3915e91318409d8589266)
+        ;
+
+        
+    
+    
+            marker_cbf341a528c870c171ba0eafa7868cf0.bindTooltip(
+                `<div>
+                     Ônibus 81205
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbf341a528c870c171ba0eafa7868cf0.setIcon(icon_85d9dd585f4621bc92afea832835153d);
+            
+    
+            var marker_03aed998cefa8550f7cc5b80265a7e3d = L.marker(
+                [-23.586561, -46.7511655],
+                {
+}
+            ).addTo(feature_group_d16540628bdecdc6ce9d5fd0b7af7e37);
+        
+    
+            var icon_bf6df44da044f86ce3d74fa7367e8247 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb5344ea749a4e34e0ece0c02f64ac13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21f7f5c6e145d9e5ceb253dc87e764d5 = $(`<div id="html_21f7f5c6e145d9e5ceb253dc87e764d5" style="width: 100.0%; height: 100.0%;"><b>Linha:</b> 8610-10<br><b>Prefixo:</b> 81139<br><b>Acessível:</b> Sim<br><b>Horário da posição:</b> 2026-10-18T14:45:28Z</div>`)[0];
+                popup_cb5344ea749a4e34e0ece0c02f64ac13.setContent(html_21f7f5c6e145d9e5ceb253dc87e764d5);
+            
+        
+
+        marker_03aed998cefa8550f7cc5b80265a7e3d.bindPopup(popup_cb5344ea749a4e34e0ece0c02f64ac13)
+        ;
+
+        
+    
+    
+            marker_03aed998cefa8550f7cc5b80265a7e3d.bindTooltip(
+                `<div>
+                     Ônibus 81139
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03aed998cefa8550f7cc5b80265a7e3d.setIcon(icon_bf6df44da044f86ce3d74fa7367e8247);
+            
+    
+            feature_group_d16540628bdecdc6ce9d5fd0b7af7e37.addTo(map_03c6a299396bc3c73ae01676a78c5e61);
+        
+    
+            var layer_control_5368d4b7cc7bc4e3a22a080bc5e6cf02_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e2bdf4dc9f44141e0ec2d0c7d3478efa,
+                },
+                overlays :  {
+                    "Paradas de \u00f4nibus" : feature_group_fd0bb55f28c8cd8111b87cf38dff6cb5,
+                    "\u00d4nibus em tempo real" : feature_group_d16540628bdecdc6ce9d5fd0b7af7e37,
+                },
+            };
+            let layer_control_5368d4b7cc7bc4e3a22a080bc5e6cf02 = L.control.layers(
+                layer_control_5368d4b7cc7bc4e3a22a080bc5e6cf02_layers.base_layers,
+                layer_control_5368d4b7cc7bc4e3a22a080bc5e6cf02_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_03c6a299396bc3c73ae01676a78c5e61);
+
+        
+    
+            map_03c6a299396bc3c73ae01676a78c5e61.fitBounds(
+                [[-23.555934, -46.650112], [-23.577143, -46.672472], [-23.558817, -46.653872], [-23.570012, -46.661799], [-23.566834, -46.658743], [-23.574389, -46.667594], [-23.572945, -46.705052], [-23.551241, -46.64583], [-23.602549, -46.785582500000004], [-23.577168, -46.6726765], [-23.586561, -46.7511655]],
+                {}
+            );
+        
+</script>
+</html>
